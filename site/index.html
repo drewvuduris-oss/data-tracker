@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Today · Data Tracker</title>
+  <meta name="description" content="Daily tracker of 20 stocks and ETFs and 15 cryptocurrencies.">
+  <meta name="theme-color" content="#2a78d6">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/papaparse.min.js" defer></script>
+  <script src="common.js" defer></script>
+  <script src="today.js" defer></script>
+</head>
+<body>
+<main>
+  <div class="page-head">
+    <h1>Today</h1>
+    <p id="run-line" class="muted">Loading the latest run…</p>
+  </div>
+
+  <section class="tiles" aria-label="Counts from the latest run">
+    <div class="tile"><div class="label">Items today</div><div class="value" id="t-items">–</div><div class="sub" id="t-items-sub"></div></div>
+    <div class="tile"><div class="label">Days with a successful run</div><div class="value" id="t-days">–</div><div class="sub" id="t-days-sub"></div></div>
+    <div class="tile"><div class="label">Sources OK</div><div class="value" id="t-sources">–</div><div class="sub" id="t-sources-sub"></div></div>
+    <div class="tile"><div class="label">Appeared today</div><div class="value" id="t-new">–</div><div class="sub" id="t-new-sub"></div></div>
+    <div class="tile"><div class="label">Gone today</div><div class="value" id="t-gone">–</div><div class="sub" id="t-gone-sub"></div></div>
+  </section>
+
+  <div class="grid-2">
+    <section class="card">
+      <h2>Biggest moves since the previous run</h2>
+      <p class="muted small">Percent change in price from each item's previous row in the history, largest first (top 10).</p>
+      <ol class="moves" id="moves"></ol>
+    </section>
+    <section class="card">
+      <h2>Sources</h2>
+      <p class="muted small" id="sources-line"></p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Source</th><th>Format</th><th>Status</th><th class="r">Items</th><th>Error</th></tr></thead>
+          <tbody id="sources"></tbody>
+        </table>
+      </div>
+      <h3 style="margin-top:18px">Appeared / gone today</h3>
+      <p class="small" id="changes"></p>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Latest values <span class="muted num small" id="latest-date"></span></h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Item</th><th>Class</th><th class="r">Price</th><th class="r">Previous</th><th class="r">Change since previous run</th><th class="r">Source change</th><th class="r">Volume</th></tr></thead>
+        <tbody id="latest"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<footer>Data: <a href="data/status.json">status.json</a> · <a href="data/history.csv">history.csv</a> · Prices from Yahoo Finance and CoinGecko. Not investment advice.</footer>
+</body>
+</html>

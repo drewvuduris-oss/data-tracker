@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trends · Data Tracker</title>
+  <meta name="description" content="A report on the price history the Data Tracker has built, computed in the browser from history.csv.">
+  <meta name="theme-color" content="#2a78d6">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/papaparse.min.js" defer></script>
+  <script src="vendor/chart.umd.min.js" defer></script>
+  <script src="common.js" defer></script>
+  <script src="trends.js" defer></script>
+</head>
+<body>
+<main>
+  <div class="page-head">
+    <h1>Trends</h1>
+    <p id="intro">Every number on this page is computed in your browser from <a href="data/history.csv">history.csv</a>, so the page grows with the history.</p>
+  </div>
+
+  <section class="card" id="explorer">
+    <h2>Values over the days</h2>
+    <div class="controls">
+      <label class="control">Value
+        <select id="metric"></select>
+      </label>
+      <label class="control">Quick pick
+        <select id="preset">
+          <option value="">Choose a group…</option>
+          <option value="Stock">Stocks</option>
+          <option value="ETF">ETFs</option>
+          <option value="Crypto">Crypto</option>
+          <option value="__starred">My shortlist</option>
+        </select>
+      </label>
+      <button type="button" class="btn" id="clear">Clear items</button>
+    </div>
+    <p class="muted small" id="picker-help">Pick up to 8 items to show. Each item keeps its color while it stays picked.</p>
+    <div class="chips" id="chips" role="group" aria-label="Items shown in the chart"></div>
+    <div class="legend" id="legend"></div>
+    <div class="chart-box tall"><canvas id="explorer-chart" role="img" aria-label="Line chart of the chosen value over the days for the picked items"></canvas></div>
+    <details class="data"><summary>Show the numbers</summary><div class="table-wrap" id="explorer-table"></div></details>
+  </section>
+
+  <div id="sections"></div>
+</main>
+<footer>Data: <a href="data/status.json">status.json</a> · <a href="data/history.csv">history.csv</a></footer>
+</body>
+</html>

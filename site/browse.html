@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse · Data Tracker</title>
+  <meta name="description" content="Latest values of every tracked stock, ETF and cryptocurrency, with filters, search, sorting and a shortlist.">
+  <meta name="theme-color" content="#2a78d6">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/papaparse.min.js" defer></script>
+  <script src="common.js" defer></script>
+  <script src="browse.js" defer></script>
+</head>
+<body>
+<main>
+  <div class="page-head">
+    <h1>Browse</h1>
+    <p>The latest values of every item. Filter, search by name, and click any numeric column heading to sort it (click again to reverse). Star an item to keep it on your shortlist; the shortlist is saved in this browser.</p>
+  </div>
+
+  <section class="card">
+    <div class="controls">
+      <label class="control">Search names
+        <input type="search" id="q" placeholder="e.g. Apple, bitcoin, SPY">
+      </label>
+      <label class="control">Asset class
+        <select id="f-class"><option value="">All classes</option></select>
+      </label>
+      <label class="control">Sector
+        <select id="f-sector"><option value="">All sectors</option></select>
+      </label>
+      <label class="control">Source
+        <select id="f-source"><option value="">All sources</option></select>
+      </label>
+      <label class="control">Change since previous run
+        <select id="f-dir">
+          <option value="">Any</option>
+          <option value="up">Up</option>
+          <option value="down">Down</option>
+          <option value="flat">Unchanged / new</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="starred"> Shortlist only <span class="muted num" id="star-count"></span></label>
+      <button type="button" class="btn" id="reset">Reset</button>
+    </div>
+    <div class="result-count" id="count" aria-live="polite">Loading…</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr id="head"></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p class="muted small" style="margin-top:10px">Empty cells (–) are values the source does not report for that item: market cap is reported for crypto only, 52-week range for stocks and ETFs only. Stock prices do not change on weekends and market holidays.</p>
+  </section>
+</main>
+<footer>Data: <a href="data/status.json">status.json</a> · <a href="data/history.csv">history.csv</a></footer>
+</body>
+</html>
