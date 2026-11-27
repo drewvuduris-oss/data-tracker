@@ -104,3 +104,38 @@ date,item_id,item,source,symbol,asset_class,sector,price_usd,change_pct,day_high
 2026-11-26,yahoo:V,Visa Inc.,yahoo,V,Stock,Financials,424.39,1.826,426.67,413.475,2796266666,,442.23,293.89,2026-11-25T21:00:02Z
 2026-11-26,yahoo:WMT,Walmart Inc.,yahoo,WMT,Stock,Consumer,131.94,-0.28,133.19,131.215,3112242149,,135.16,102.15,2026-11-25T21:00:01Z
 2026-11-26,yahoo:XOM,ExxonMobil Holdings Corporation,yahoo,XOM,Stock,Energy,158.08,-0.095,159.7,156.835,3374456933,,188.5,114.31,2026-11-25T21:03:33Z
+2026-11-27,coingecko:avalanche-2,Avalanche,coingecko,AVAX,Crypto,Smart-contract platform,6.72,0.6758,6.75,6.48,116327878,3002234637,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:binancecoin,BNB,coingecko,BNB,Crypto,Exchange token,562.33,0.8452,563.94,545.2,530709126,73951870672,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:bitcoin,Bitcoin,coingecko,BTC,Crypto,Store of value,61432,1.2614,61678,59942,22305480372,1235879111676,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:bitcoin-cash,Bitcoin Cash,coingecko,BCH,Crypto,Store of value,216.9,4.2859,219.32,204.39,133881258,4364622763,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:cardano,Cardano,coingecko,ADA,Crypto,Smart-contract platform,0.15122,1.5575,0.151899,0.146119,219970024,5683606934,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:chainlink,Chainlink,coingecko,LINK,Crypto,DeFi,9.49,3.1498,9.55,9.05,229642459,7276763225,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:dogecoin,Dogecoin,coingecko,DOGE,Crypto,Meme,0.05774,1.6373,0.057808,0.055896,322468614,9060074714,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:ethereum,Ethereum,coingecko,ETH,Crypto,Smart-contract platform,1726.86,1.8937,1734.25,1669.78,8003215740,211114459187,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:litecoin,Litecoin,coingecko,LTC,Crypto,Store of value,44.44,1.2388,44.75,42.92,189463366,3460755426,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:polkadot,Polkadot,coingecko,DOT,Crypto,Smart-contract platform,0.687469,2.2282,0.690473,0.657135,62266999,1178311411,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:ripple,XRP,coingecko,XRP,Crypto,Payments,0.962403,0.5662,0.964328,0.934505,1226624813,61128588263,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:solana,Solana,coingecko,SOL,Crypto,Smart-contract platform,72.79,2.4192,72.77,69.93,1879625695,43109326831,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:stellar,Stellar,coingecko,XLM,Crypto,Payments,0.128512,-0.2617,0.129293,0.125564,73984057,4561398480,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:tron,TRON,coingecko,TRX,Crypto,Smart-contract platform,0.304963,0.4232,0.304857,0.301595,259298152,28989519765,,,2026-11-27T03:45:48Z
+2026-11-27,coingecko:uniswap,Uniswap,coingecko,UNI,Crypto,DeFi,4.83,1.3754,4.9,4.55,288575159,2933706197,,,2026-11-27T03:45:48Z
+2026-11-27,yahoo:AAPL,Apple Inc.,yahoo,AAPL,Stock,Technology,355.58,0.426,356.75,345.13,18867164406,,360.83,243.42,2026-11-25T21:00:02Z
+2026-11-27,yahoo:AMZN,"Amazon.com, Inc.",yahoo,AMZN,Stock,Consumer,244.43,-3.115,246.55,235.96,15084727599,,287.2,196,2026-11-25T21:00:02Z
+2026-11-27,yahoo:BAC,Bank of America Corporation,yahoo,BAC,Stock,Financials,48.54,-0.041,48.725,46.94,1857282671,,65.23,46.12,2026-11-25T21:00:03Z
+2026-11-27,yahoo:DIA,State Street SPDR Dow Jones Ind,yahoo,DIA,ETF,Index fund,501.27,0.306,503.385,488.62,2122861908,,546.75,450.44,2026-11-25T21:00:00Z
+2026-11-27,yahoo:GOOGL,Alphabet Inc.,yahoo,GOOGL,Stock,Communication,273.1,-2.132,273.62,262.73,11143768486,,408.61,262.73,2026-11-25T21:00:02Z
+2026-11-27,yahoo:GS,"Goldman Sachs Group, Inc. (The)",yahoo,GS,Stock,Financials,801.03,-0.619,806.16,772.74,2701866180,,1153.99,772.74,2026-11-25T21:00:02Z
+2026-11-27,yahoo:IWM,iShares Russell 2000 Index Fund,yahoo,IWM,ETF,Index fund,268.87,0.648,269.77,260.84,8590183555,,305.18,238.69,2026-11-25T21:00:00Z
+2026-11-27,yahoo:JPM,JP Morgan Chase & Co.,yahoo,JPM,Stock,Financials,316.74,-0.114,318.34,309.538,2415609058,,366.5,279.1,2026-11-25T21:00:02Z
+2026-11-27,yahoo:KO,Coca-Cola Company (The),yahoo,KO,Stock,Consumer,97.59,-0.031,98.775,97.49,2387310111,,100.56,67.27,2026-11-25T21:00:02Z
+2026-11-27,yahoo:META,"Meta Platforms, Inc.",yahoo,META,Stock,Communication,609.89,3.403,611.055,567.75,11318350208,,779.82,520.26,2026-11-25T21:00:02Z
+2026-11-27,yahoo:MSFT,Microsoft Corporation,yahoo,MSFT,Stock,Technology,489.93,-1.25,493.437,477.39,12784855631,,559.15,349.2,2026-11-25T21:00:02Z
+2026-11-27,yahoo:NVDA,NVIDIA Corporation,yahoo,NVDA,Stock,Technology,149.3,-3.913,150.37,141.17,53677385131,,243.37,124.5,2026-11-25T21:00:01Z
+2026-11-27,yahoo:QQQ,"Invesco QQQ Trust, Series 1",yahoo,QQQ,ETF,Index fund,633.93,-0.654,634.89,607.76,51119277778,,762.86,555.6,2026-11-25T21:00:01Z
+2026-11-27,yahoo:SPY,State Street SPDR S&P 500 ETF T,yahoo,SPY,ETF,Index fund,716.7,-0.289,718.43,695.45,51875086432,,781.62,629.28,2026-11-25T21:00:00Z
+2026-11-27,yahoo:TLT,iShares 20+ Year Treasury Bond ,yahoo,TLT,ETF,Bond fund,82.24,0.92,82.81,82.17,4020254290,,90.86,76.43,2026-11-25T21:00:02Z
+2026-11-27,yahoo:TSLA,"Tesla, Inc.",yahoo,TSLA,Stock,Consumer,380.14,-1.18,383.73,357.64,12880290843,,498.83,297.38,2026-11-25T21:00:02Z
+2026-11-27,yahoo:TSN,"Tyson Foods, Inc.",yahoo,TSN,Stock,Consumer,63.52,0.158,64.26,62.899,181710267,,69.48,49.96,2026-11-25T21:00:02Z
+2026-11-27,yahoo:V,Visa Inc.,yahoo,V,Stock,Financials,424.39,1.826,426.67,413.475,2796266666,,442.23,293.89,2026-11-25T21:00:02Z
+2026-11-27,yahoo:WMT,Walmart Inc.,yahoo,WMT,Stock,Consumer,131.94,-0.28,133.19,131.215,3112242149,,135.16,102.15,2026-11-25T21:00:01Z
+2026-11-27,yahoo:XOM,ExxonMobil Holdings Corporation,yahoo,XOM,Stock,Energy,158.08,-0.095,159.7,156.835,3374456933,,188.5,114.61,2026-11-25T21:03:33Z

@@ -1,0 +1,19 @@
+{
+  "run_time": "2026-11-27T03:46:02Z",
+  "sources": [
+    {
+      "name": "coingecko",
+      "format": "json",
+      "ok": true,
+      "count": 15,
+      "error": ""
+    },
+    {
+      "name": "yahoo",
+      "format": "json",
+      "ok": true,
+      "count": 20,
+      "error": ""
+    }
+  ]
+}
